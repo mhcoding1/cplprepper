@@ -2,7 +2,7 @@
 
 
 
-# Hier fragen wir nach der Verwendung der Templates oder eines eigenen Payloads
+# Choosing between templates and custom payloads
 
 print("Do you want to use the templates or use your own script?")
 print("\n")
@@ -28,7 +28,7 @@ elif selection == 2:
 
 
 
-# Hier fragen wir nach der Attacker IP
+# Asking for the attacker IP and the input fields
 
 print("What is the attacker IP?")
 attip= input()
@@ -37,9 +37,6 @@ print(f"Attacker IP: {attip}")
 print("\n")
 
 
-  
-# Hier fragen wir nach den Input Fields
-
 print("What are the names of the input Fields, separated by 'comma'?")
 fields = input()
 words = fields.split(",")
@@ -47,7 +44,7 @@ print("\n")
 
 
 
-# Hier drucken wir die Template Payloads
+# Outputting the template payloads
 
 if selection == 1:
     for field in words:
@@ -77,10 +74,7 @@ if selection == 1:
     exit()
 
 
-
-
-
-# Hier drucken wie die Custom Payloads
+# Outputting the custom payloads
 
 if selection == 2:
     print("Please input your own script.\nPlease insert '{attip}' for the attacker IP and '{field}' for your custom field.\n")
